@@ -11,10 +11,6 @@ const routes: Routes = [
     redirectTo: 'dados',  // <- Aqui mudou de 'home' para 'dados'
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  }
 ];
 
 
