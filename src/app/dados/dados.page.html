@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Cadastro de E-mails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h2>📧 Registre aqui seu e-mail:</h2>
+  <ion-item>
+    <ion-input [(ngModel)]="novoEmail" placeholder="exemplo@email.com" type="email"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="salvarEmail()">Registrar</ion-button>
+
+  <h2 class="ion-margin-top">📜 Lista de e-mails registrados:</h2>
+  <ion-list>
+    <ion-item *ngFor="let item of emails">
+      <ion-label>{{ item.email }}</ion-label>
+      <ion-button slot="end" fill="clear" color="danger" (click)="deletarEmail(item.id)">
+        🗑️
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

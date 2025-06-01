@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "",
+    apiKey: "AIzaSyCIMokoEbzDcJ03Dd7vfqwEm-7V-t7_zvY",
     authDomain: "formadora3-73836.firebaseapp.com",
     projectId: "formadora3-73836",
     storageBucket: "formadora3-73836.firebasestorage.app",
